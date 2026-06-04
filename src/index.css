@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+:root {
+  --black: #ffffff;
+  --graphite: #F5F5F5;
+  --gold: #C9A34E;
+  --gold-light: #E5C97A;
+  --white: #1A1A1A;
+  --grey: #666666;
+
+  --bg: var(--black);
+  --surface: var(--graphite);
+  --surface-hover: #E8E8E8;
+  --text: var(--white);
+  --text-secondary: var(--grey);
+  --accent: #C9A34E;
+  --accent-glow: rgba(201, 163, 78, 0.15);
+  --border: rgba(0, 0, 0, 0.08);
+  --card-bg: rgba(245, 245, 245, 0.82);
+  --nav-bg: rgba(255, 255, 255, 0.95);
+  --shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+}
+
