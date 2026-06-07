@@ -102,7 +102,7 @@ export default function AIAssistant() {
       {!isOpen && (
         <button
           onClick={() => setIsOpen(true)}
-          className="fixed bottom-6 right-6 p-4 rounded-full bg-gradient-to-r from-[var(--accent)] to-[var(--gold-light)] text-white shadow-2xl hover:scale-115 active:scale-95 transition-all z-[4000] flex items-center gap-2 group border border-amber-400/25"
+          className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 p-3.5 sm:p-4 rounded-full bg-gradient-to-r from-[var(--accent)] to-[var(--gold-light)] text-white shadow-2xl hover:scale-115 active:scale-95 transition-all z-[4000] flex items-center gap-2 group border border-amber-400/25"
         >
           <Sparkles className="w-5 h-5 animate-pulse text-black" />
           <span className="text-xs font-semibold text-neutral-900 tracking-wider uppercase max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-300 ease-out whitespace-nowrap">
@@ -115,7 +115,7 @@ export default function AIAssistant() {
 
       {/* Main chat layout */}
       {isOpen && (
-        <div className="fixed bottom-6 right-6 w-full max-w-[360px] md:max-w-[400px] h-[520px] bg-white rounded-3xl shadow-2xl border border-neutral-200/80 z-[4900] flex flex-col overflow-hidden animate-fade-in-up">
+        <div className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 w-[calc(100vw-32px)] sm:w-[350px] md:w-[390px] h-[480px] sm:h-[520px] bg-white rounded-3xl shadow-2xl border border-neutral-200/80 z-[4900] flex flex-col overflow-hidden animate-fade-in-up">
           {/* Header */}
           <div className="p-4 bg-gradient-to-r from-neutral-900 to-neutral-800 text-white flex items-center justify-between border-b border-neutral-700">
             <div className="flex items-center gap-3">
