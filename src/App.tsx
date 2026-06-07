@@ -235,7 +235,7 @@ export default function App() {
             <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[var(--accent-glow)] border border-[#C9A34E]/25 text-xs text-[#C9A34E] font-bold tracking-wide uppercase">
               <span className="w-1.5 h-1.5 bg-[#C9A34E] rounded-full animate-ping" /> Wet Processing major &amp; Lead Agent
             </span>
-            <h1 className="text-4.5xl md:text-5xl font-black tracking-tight text-neutral-900 leading-none">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight text-neutral-900 leading-none">
               Shadat Hossen Mahin
             </h1>
             
@@ -250,24 +250,24 @@ export default function App() {
             I combine robust mechanical and chemical parameters of modern textile chemistry with freelance platform negotiation strategies to source, acquire, and complete projects with prestigious B2B buyers globally.
           </p>
 
-          <div className="flex flex-wrap justify-center md:justify-start gap-3.5 pt-3">
+          <div className="flex flex-wrap justify-center md:justify-start gap-3 pt-3">
             <button
               onClick={() => scrollToSection("contact")}
-              className="px-6 py-3 rounded-full bg-gradient-to-r from-[#C9A34E] to-[#E5C97A] text-white text-xs font-bold tracking-widest uppercase hover:brightness-105 transition-all shadow-md active:scale-95 flex items-center gap-2 cursor-pointer"
+              className="px-4 py-2.5 sm:px-6 sm:py-3 rounded-full bg-gradient-to-r from-[#C9A34E] to-[#E5C97A] text-white text-[11px] sm:text-xs font-bold tracking-widest uppercase hover:brightness-105 transition-all shadow-md active:scale-95 flex items-center gap-1.5 cursor-pointer"
             >
-              Get In Touch <ArrowRight className="w-4 h-4" />
+              Get In Touch <ArrowRight className="w-3.5 h-3.5" />
             </button>
             <button
               onClick={() => scrollToSection("experience")}
-              className="px-6 py-3 rounded-full border border-neutral-300 hover:border-neutral-500 text-neutral-700 hover:text-neutral-900 text-xs font-bold tracking-widest uppercase transition-colors cursor-pointer"
+              className="px-4 py-2.5 sm:px-6 sm:py-3 rounded-full border border-neutral-300 hover:border-neutral-500 text-neutral-700 hover:text-neutral-900 text-[11px] sm:text-xs font-bold tracking-widest uppercase transition-colors cursor-pointer"
             >
               Verify Experience
             </button>
             <button
               onClick={() => setIsCvOpen(true)}
-              className="px-6 py-3 rounded-full bg-neutral-950 hover:bg-neutral-800 text-white text-xs font-bold tracking-widest uppercase transition-all flex items-center gap-2 cursor-pointer active:scale-95"
+              className="px-4 py-2.5 sm:px-6 sm:py-3 rounded-full bg-neutral-950 hover:bg-neutral-800 text-white text-[11px] sm:text-xs font-bold tracking-widest uppercase transition-all flex items-center gap-1.5 cursor-pointer active:scale-95"
             >
-              <FileText className="w-4 h-4" /> Download Resume
+              <FileText className="w-3.5 h-3.5" /> Download Resume
             </button>
           </div>
 
@@ -277,7 +277,7 @@ export default function App() {
 
       {/* Metrics bento cards grid */}
       <section className="max-w-6xl mx-auto px-5 md:px-8 py-8 relative z-10">
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           
           <div className="bg-white border border-neutral-200/50 p-6 rounded-3xl flex items-center justify-between shadow-sm hover:shadow-md transition-shadow">
             <div className="space-y-1 text-left">
@@ -480,7 +480,7 @@ export default function App() {
       {showScrollTop && (
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="fixed bottom-6 left-6 p-4 rounded-full bg-neutral-900 text-white shadow-2xl hover:scale-110 active:scale-95 transition-all z-[4000] border border-neutral-800 "
+          className="fixed bottom-4 left-4 sm:bottom-6 sm:left-6 p-3.5 sm:p-4 rounded-full bg-neutral-900 text-white shadow-2xl hover:scale-110 active:scale-95 transition-all z-[4000] border border-neutral-800"
           aria-label="Back to raw top page"
         >
           <ChevronUp className="w-4 h-4" />
