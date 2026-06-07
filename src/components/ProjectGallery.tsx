@@ -125,12 +125,12 @@ export default function ProjectGallery() {
       </div>
 
       {/* Tabs list */}
-      <div className="flex flex-wrap justify-center gap-2 md:gap-3">
+      <div className="flex flex-wrap justify-center gap-1.5 sm:gap-2.5">
         {(["all", "wet-processing", "dyeing", "client-acquisition", "innovations"] as const).map((tab) => (
           <button
             key={tab}
             onClick={() => setActiveTab(tab)}
-            className={`flex items-center gap-2 px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all border ${
+            className={`flex items-center gap-1.5 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full text-[10px] sm:text-xs font-semibold uppercase tracking-wider transition-all border ${
               activeTab === tab
                 ? "bg-[var(--accent)] border-[var(--accent)] text-white shadow-md shadow-[var(--accent-glow)] scale-105"
                 : "bg-[var(--surface)] text-neutral-600 border-neutral-200 hover:border-neutral-400 hover:text-neutral-900"
@@ -186,9 +186,9 @@ export default function ProjectGallery() {
       {/* Modal Detail Screen */}
       {selectedProject && (
         <div className="fixed inset-0 bg-neutral-900/40 backdrop-blur-md z-[5000] flex items-center justify-center p-4">
-          <div className="bg-white rounded-3xl w-full max-w-2xl overflow-hidden shadow-2xl border border-neutral-200 flex flex-col max-h-[90vh]">
+          <div className="bg-white rounded-3xl w-full max-w-2xl overflow-hidden shadow-2xl border border-neutral-200 flex flex-col max-h-[85vh] sm:max-h-[90vh]">
             {/* Header banner background */}
-            <div className="bg-gradient-to-r from-neutral-50 to-neutral-100 border-b border-neutral-200 p-6 relative flex-shrink-0">
+            <div className="bg-gradient-to-r from-neutral-50 to-neutral-100 border-b border-neutral-200 p-5 sm:p-6 relative flex-shrink-0">
               <button
                 onClick={() => setSelectedProject(null)}
                 className="absolute top-4 right-4 p-2 rounded-full hover:bg-neutral-200 text-neutral-500 hover:text-neutral-800 transition-colors"
@@ -199,13 +199,13 @@ export default function ProjectGallery() {
               <span className="inline-block text-[10px] uppercase font-extrabold tracking-widest text-white bg-[var(--accent)] px-3 py-1 rounded-full mb-3 shadow-[var(--accent-glow)]">
                 {selectedProject.category.split("-").join(" ")}
               </span>
-              <h2 className="text-2xl font-bold tracking-tight text-neutral-900 pr-8">
+              <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-neutral-900 pr-8">
                 {selectedProject.title}
               </h2>
             </div>
 
             {/* Content area */}
-            <div className="p-6 overflow-y-auto space-y-6">
+            <div className="p-5 sm:p-6 overflow-y-auto space-y-6">
               <div className="space-y-2">
                 <h4 className="text-xs uppercase font-extrabold text-neutral-400 tracking-wider flex items-center gap-1.5">
                   <Zap className="w-3.5 h-3.5 text-[var(--accent)]" /> Project Objective & Background
